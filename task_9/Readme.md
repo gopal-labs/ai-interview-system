@@ -1,4 +1,4 @@
-# AI Interview System — Conversation Memory Module (Phase 3)
+# AI Interview System - Conversation Memory Module (Phase 3)
 
 ## Project Overview
 
