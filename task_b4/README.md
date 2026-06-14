@@ -140,18 +140,6 @@ When confidence falls below 0.30, or the input is empty or contains only punctua
 ---
 
 
-## Known Limitations
-
-The model is trained on a small dataset of 40 questions, 10 per class. While it achieves 100 percent accuracy on the training set (it effectively memorises the examples it has seen), held-out accuracy on the 20 percent test split is lower because the vocabulary in unseen phrasings does not always overlap with training vocabulary. This is expected behaviour for a small dataset and not a flaw in the code. The most effective improvement is to add more varied training examples per class.
-
-Out-of-scope questions, meaning anything outside the four topics such as "What is the weather?", are not refused outright. The classifier always assigns the most likely of the four topics. The uncertain flag is provided so callers can choose to handle these cases differently, but the flag is a heuristic and will not catch every out-of-scope question.
-
-The secondary topic threshold and the confidence threshold are fixed constants chosen on the current dataset. They may need adjustment if the dataset grows significantly or new topic categories are added.
-
-
----
-
-
 ## Challenges Addressed in This Task
 
 This section describes the challenges that existed in the original implementation and how each one was resolved.
