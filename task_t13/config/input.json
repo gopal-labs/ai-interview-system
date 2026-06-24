@@ -1,0 +1,5 @@
+{
+  "requests": 100,
+  "servers": 4,
+  "algorithm": "round_robin"
+}
